@@ -34,7 +34,7 @@ def ask():
         )
         cleaned_response = clean_json_output(response.text)
 
-        return jsonify({"response": cleaned_response})
+        return jsonify(cleaned_response)
         # try:
         #     parsed = json.loads(response.text)
         #     return jsonify(parsed)
