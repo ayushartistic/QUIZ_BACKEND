@@ -4,9 +4,10 @@ import re
 import json
 from google import genai
 from flask_cors import CORS
-CORS(app)
+
 
 app = Flask(__name__)
+CORS(app)
 
 # API key environment variable se aayegi
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
