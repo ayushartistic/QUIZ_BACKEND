@@ -3,6 +3,8 @@ import os
 import re
 import json
 from google import genai
+from flask_cors import CORS
+CORS(app)
 
 app = Flask(__name__)
 
